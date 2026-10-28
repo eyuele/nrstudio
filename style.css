@@ -1,0 +1,306 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 1em;
+}
+
+body {
+    background: linear-gradient(#fff, #f9f6f1);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(244, 243, 242);
+    padding: 0.4em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 2em;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 110rem;
+    height: 4em;
+    align-items: center;
+}
+nav img {
+    border-radius: 50em;
+    height: 4em;
+    width: 4em;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    padding-left: 1em;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+main {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+.hero {
+    background:
+        linear-gradient(rgba(48, 48, 48, 0.242), #0101018a, #0000007b, #00000020),
+        url(assets/img/pexels-ifeyinkastudios-29852805.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    height: 50vw;
+    width: 100%;
+    max-width: 110rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    gap: 1em;
+    margin-bottom: 2em;
+    p {
+        color: white;
+        font-size: clamp(8px, 6vw, 10vh);
+        width: 10em;
+    }
+    button {
+        background: #ac5f02;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 2rem;
+        width: 16em;
+        font-size: 1rem;
+    }
+}
+
+.gallery {
+    width: 100%;
+    max-width: 110rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+
+    h2 {
+        width: 100%;
+        color: #632d00;
+    }
+
+    div {
+        display: flex;
+        gap: 1em;
+        width: 100%;
+        max-width: 110em;
+
+        div {
+            width: 100%;
+            border-radius: 1rem;
+        }
+        .left-img {
+            max-width: 50%;
+            height: 80em;
+            background: url(assets/img/3e8ff24eb35084d19eceab831b6610f9.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            height: 80em;
+            width: 50%;
+            .right-img {
+                width: 100%;
+                height: 100%;
+                background: #632d00;
+            }
+            .right-img:nth-child(1) {
+                background: url(assets/img/3e8ff24eb35084d19eceab831b6610f9.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .right-img:nth-child(2) {
+                background: url(assets/img/pexels-ifeyinkastudios-29852805.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+.packages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 110em;
+    gap: 1em;
+    margin-bottom: 2em;
+    h2 {
+        width: 100%;
+    }
+
+    .card-container {
+        display: flex;
+        gap: 1em;
+        width: 100%;
+        .cards {
+            background: linear-gradient(90deg, #fffcf9, #fdf1e1);
+            border-top: 5px rgb(131, 64, 42) solid;
+            border-radius: 8px;
+            line-height: 2em;
+
+            box-shadow: 0px 0px 10px 10px #dacebd3d;
+            padding: 1em;
+            width: 100%;
+            min-height: 10em;
+            h3 {
+                font-size: 1.3em;
+                color: rgb(131, 64, 42);
+            }
+            p:nth-child(3) {
+                color: rgb(131, 64, 42);
+                font-weight: 800;
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+.testimonials {
+    width: 100%;
+    max-width: 110rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
+    h2 {
+        width: 100%;
+    }
+
+    .card-container {
+        justify-content: center;
+        display: flex;
+        gap: 1em;
+        width: 100%;
+        .cards {
+            display: flex;
+            flex-direction: column;
+            background: #fffdfa;
+            box-shadow: 0px 0px 10px 10px #dacebd3d;
+            border-radius: 1em;
+            padding: 1.4em;
+            gap: 1em;
+            width: 100%;
+            max-width: 40em;
+            div {
+                display: flex;
+                align-items: center;
+                gap: 1em;
+                flex-wrap: wrap;
+                img {
+                    border-radius: 100px;
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+        }
+    }
+}
+
+.book {
+    width: 100%;
+    max-width: 110rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+    h2 {
+        width: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px 10px #dacebd3d;
+        border-radius: 1em;
+        background: #fff;
+        padding: 2em;
+        width: 100%;
+        max-width: 50em;
+        height: 50vh;
+        gap: 0.6em;
+        label {
+            color: black;
+        }
+        input {
+            border: 1px rgb(206, 186, 179) solid;
+            border-radius: 8px;
+            padding-left: 1em;
+            height: 4em;
+            width: 100%;
+        }
+        select {
+            border: 1px rgb(206, 186, 179) solid;
+            border-radius: 8px;
+            height: 4em;
+            width: 100%;
+            padding-left: 1em;
+        }
+        textarea {
+            border: 1px rgb(206, 186, 179) solid;
+            padding: 1em;
+            border-radius: 8px;
+            height: 8em;
+            width: 100%;
+            resize: vertical;
+        }
+        button {
+            height: 3rem;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            background: #632d00;
+            color: #f9f6f1;
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (width <= 760px) {
+    .testimonials .card-container {
+        flex-wrap: wrap;
+    }
+    .packages .card-container {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NR Studio</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="assets/img/pexels-ifeyinkastudios-29852805.jpg" alt="jpg" width="50px" />
+                <ul>
+                    <a href="#gallery"> <li>Gallery</li></a>
+                    <a href="#packages"> <li>Packages</li></a>
+                    <a href="#testimonials"> <li>Testimonials</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" height="500px">
+                <p>where your imagination meets reality</p>
+                <a href="#book"><button>Book an Apointement</button></a>
+            </section>
+
+            <section class="gallery" id="gallery">
+                <h2>Gallery</h2>
+                <div>
+                    <div class="left-img"></div>
+                    <div>
+                        <div class="right-img"></div>
+                        <div class="right-img"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="packages" id="packages">
+                <h2>Packages</h2>
+                <div class="card-container">
+                    <div class="cards">
+                        <h3>Wedding</h3>
+                        <p>full studio and filed photoshoot</p>
+                        <p>starting from 900 Birr</p>
+                    </div>
+                    <div class="cards">
+                        <h3>Field</h3>
+                        <p>photoshoot for birthdays, babyshower's, and other occations</p>
+                        <p>starting from 1500 birr</p>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonials" id="testimonials">
+                <h2>Testimonials</h2>
+
+                <div class="card-container">
+                    <div class="cards">
+                        <div>
+                            <img src="assets/img/pexels-ifeyinkastudios-29852805.jpg" width="50pxs" alt="pfp" />
+                            <h3>Kidist</h3>
+                        </div>
+                        <p>they have the best service</p>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <img src="assets/img/pexels-ifeyinkastudios-29852805.jpg" width="50pxs" alt="pfp" />
+                            <h3>Kidist</h3>
+                        </div>
+                        <p>they have the best service</p>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <img src="assets/img/pexels-ifeyinkastudios-29852805.jpg" width="50pxs" alt="pfp" />
+                            <h3>Kidist</h3>
+                        </div>
+                        <p>they have the best service</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="book" id="book">
+                <h2>Book an Apointement</h2>
+                <form action="#">
+                    <label for="Phone Number">Phone Number</label>
+                    <input type="text" name="phone" id="phone" /><br />
+                    <label for="Packages">Packages</label>
+                    <select name="package" id="package">
+                        <option value="" disabled selected>Select On Option</option>
+                        <option value="wedding">wedding</option>
+                        <option value="filed">field</option></select
+                    ><br />
+                    <label for="Additional Notes">Additional Note </label>
+                    <textarea name="notes" id="notes" placeholder=""></textarea><br />
+                    <button>Book</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
